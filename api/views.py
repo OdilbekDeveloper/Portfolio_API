@@ -30,7 +30,7 @@ def SendContact(request):
         token = '6085140316:AAE57gJ5v-SsucVkJ9X21Zl8qOf6QOLBvDs'
         text = 'Yangi xabar!\n' + 'F.I.SH: ' + first_name + ' ' + last_name + '\nTelefon raqam: ' + phone + '\nXabar: ' + message
         url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id='
-        requests.get(url + str(id.tg_id) + '&text=' + text)
+        requests.get(url + str(id) + '&text=' + text)
 
         return Response(status=200)
 
