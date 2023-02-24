@@ -11,6 +11,7 @@ def Main(request):
     return True
 
 
+@api_view(['POST'])
 def SendContact(request):
     if request.method == 'POST':
         first_name = request.POST['first_name']
@@ -31,6 +32,5 @@ def SendContact(request):
         url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id='
         requests.get(url + str(id.tg_id) + '&text=' + text)
 
-        ser = ContactLoader(a)
-        return Response(ser.data, status=status.HTTP_200_OK)
+        return Response(status=200)
 
