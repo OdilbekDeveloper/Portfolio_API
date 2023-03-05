@@ -7,3 +7,7 @@ class Contact(models.Model):
     last_name = models.CharField(max_length=255)
     phone = models.CharField(max_length=255)
     message = models.TextField()
+
+
+class Newsletter(models.Model):
+    email = models.EmailField(max_length=255)

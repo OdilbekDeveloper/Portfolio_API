@@ -43,33 +43,33 @@ INSTALLED_APPS = [
 ]
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000"
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://127.0.0.1:8000"
+# ]
 
 
-CORS_ALLOW_METHODS = (
-    "GET",
-    "POST",
-    "PUT",
-    "PATCH",
-    "DELETE",
-    "OPTIONS",
-)
+# CORS_ALLOW_METHODS = (
+#     "GET",
+#     "POST",
+#     "PUT",
+#     "PATCH",
+#     "DELETE",
+#     "OPTIONS",
+# )
 
-CORS_ALLOW_HEADERS = (
-    "x-requested-with",
-    "accept",
-    'origin',
-    "authorization",
-    "x-csnftoken",
-    "token",
-    "x-device-id",
-    'x-device-type',
-    "x-push-id",
-    "dataserviceversion",
-    'maxdataservicevension',
-)
+# CORS_ALLOW_HEADERS = (
+#     "x-requested-with",
+#     "accept",
+#     'origin',
+#     "authorization",
+#     "x-csnftoken",
+#     "token",
+#     "x-device-id",
+#     'x-device-type',
+#     "x-push-id",
+#     "dataserviceversion",
+#     'maxdataservicevension',
+# )
 
 CORS_ORIGIN_ALLOW_ALL = True
 
