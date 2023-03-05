@@ -1,6 +1,6 @@
 .idea/
 .idea
-db.sqlite3
+# db.sqlite3
 venv/
 mexclusive/settings.py
 media/
